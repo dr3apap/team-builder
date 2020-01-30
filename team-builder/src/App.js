@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import { useState } from "react"
 import Form from "./component/Form"
+import List from "./component/List"
 
 function App() {
   const [member, setMember] = useState
@@ -25,6 +26,7 @@ function App() {
   return (
     <div className="App">
       <Form list={memberData} />
+      <List member={member} />
     </div>
   );
 }
