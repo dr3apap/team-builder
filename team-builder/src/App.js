@@ -9,7 +9,7 @@ function App() {
     ([{
       name: "Adesina Adebola",
       email: "dr3apap@gmail.com",
-      role: "Front-end"
+      role: "Lambda Student "
     }])
   const memberData = (newAdd) => {
     const newMember =
@@ -25,7 +25,7 @@ function App() {
 
   return (
     <div className="App">
-      <Form list={memberData} />
+      <Form memberData={memberData} />
       <List member={member} />
     </div>
   );
